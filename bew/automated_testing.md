@@ -27,3 +27,25 @@ Types of Tests
 - Models     -> Unit testing
 - Views      -> UI Testing
 - Controller -> Routes Testing
+    - testing Routes is the best practice
+
+Test Runner
+-
+- Mocha
+- javascript test framework running on node
+
+Mocking
+- "Process used in unit testing when the unit being tested has external dependencies"
+- "The purpose is to focus on the code being tested and not on the behavior or state of external dependencies"
+- Fake object that simulates external object to test code
+- Example: Sinon
+
+Continuous Integration (CI)
+- Development practice that requires developers to integrate code into a shared repository
+- Much like a gate on Github, code will not be pushed without passing CI tests
+
+Chai
+- assertion library for node
+- should
+- expect
+- assert

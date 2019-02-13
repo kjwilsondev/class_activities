@@ -1,21 +1,28 @@
-const mocha = require("mocha");
 const chai = require("chai");
 const utils = require("../utils");
 const expect = chai.expect;
+//var assert = require('assert');
 
 // NOTE: https://mochajs.org/#arrow-functions
 // Passing arrow functions (“lambdas”) to Mocha is discouraged.
 // Lambdas lexically bind this and cannot access the Mocha context.
 it("should say hello", function() {
-  const hello = utils.sayHello();
-  expect(hello).to.be.a("string");
-  expect(hello).to.equal("Hello");
-  expect(hello).with.lengthOf(5);
+    const hello = utils.sayHello();
+    expect(hello).to.be.a("string");
+    expect(hello).to.equal("Hello");
+    expect(hello).with.lengthOf(5);
 });
 
-it("should return the area of a 5 by 6 rectangle");
+it("should return the area of a 5 by 6 rectangle", function() {
+    const airea = utils.area(5, 6);
+    expect(airea).to.be.an(Number);
+    expect(airea).to.equal(30);
+});
 
-it("should return the are of a circle of radius 5");
+it("should return the area of a circle of radius 5")
+    // const area = utils.circleArea();
+    // expect(area).to.be.a("float");
+    // expect(area).to.equal("78.53981633974483");
 
 // ========================================================
 // Challenges
